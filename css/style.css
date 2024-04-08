@@ -1,0 +1,82 @@
+:root{
+    --color-primary: #6f00ff;
+    --color-secondary: #ff00ff;
+    --color-tertiary: #00ca3d;
+    --color-fondo: #100049;
+}
+
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: var(--color-fondo);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+}
+nav ul li{
+    display: inline;
+    margin-right: 10px;
+
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+
+    &:hover{
+        color: var(--color-secondary);
+        scale: 1.1;
+        transform: translate(0, -5px);
+        position: relative;
+        display: flex;
+    }
+}
+nav h1{
+    margin: 0;
+    padding: 0;
+    color: var(--color-primary);
+    margin-left: 20px;
+    font-size: 2rem;
+}
+nav h1 span{
+    color: var(--color-secondary);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+nav button{
+    color: #fff;
+    background-color: red;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-right: 20px;
+
+
+    &:hover{
+        background-color: var(--color-tertiary);
+    }
+}
+nav button a{
+    color: #fff;
+    text-decoration: none;
+}
