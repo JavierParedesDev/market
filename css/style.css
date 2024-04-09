@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&display=swap');
 :root{
     --color-primary: #6f00ff;
     --color-secondary: #ff00ff;
     --color-tertiary: #00ca3d;
     --color-fondo: #100049;
+    --color-logo: #c00000;
 }
 
 body{
@@ -51,18 +54,18 @@ nav ul li a{
 nav h1{
     margin: 0;
     padding: 0;
-    color: var(--color-primary);
+    color: #fff;
     margin-left: 20px;
     font-size: 2rem;
 }
 nav h1 span{
-    color: var(--color-secondary);
+    color: var(--color-logo);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 nav button{
     color: #fff;
-    background-color: red;
+    background-color: var(--color-logo);
     text-decoration: none;
     padding: 10px 20px;
     border: none;
@@ -95,4 +98,68 @@ nav button a{
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     transform: scale(1.05);
    }
+}
+.Cont-Ofertas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ofertas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: var(--color-tertiary);
+    border-radius: 50px;
+    color: #fff;
+    position: relative;
+}
+.ofertas h1{
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.ofertas p{
+    font-size: 1.5rem;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+
+}
+.publicidad-pequeña{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 30px;
+}
+.ver-mas{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    margin: 50px;
+    padding-bottom: 40px;
+}
+.ver-mas a{
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    &:hover{
+        color: var(--color-primary);
+    }
+}
+.gratis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
